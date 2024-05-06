@@ -17,9 +17,9 @@ void test_bread_bwrite(void)
 {
     image_open("test_image.txt", 1);
 
-    unsigned char data[2];
-    data[0] = (unsigned char)52;
-    data[1] = (unsigned char)50;
+    unsigned char data[BLOCK_SIZE] = { 0 };
+    data[0] = 52;
+    data[1] = 50;
 
     bwrite(0, data);
 

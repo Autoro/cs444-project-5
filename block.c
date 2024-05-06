@@ -4,8 +4,6 @@
 #include "image.h"
 #include "block.h"
 
-const int BLOCK_SIZE = 4096;
-
 void set_image_pos(int block_num)
 {
     int offset = BLOCK_SIZE * block_num;
